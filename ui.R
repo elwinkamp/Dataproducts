@@ -3,9 +3,9 @@ shinyUI(
     # Application title
     headerPanel("Child length predictor"),
     sidebarPanel(
+      h4('Use this advanced algorithm to predict child height from parent height. The algorithm was created using the Galton data'),
       numericInput('parentHeight', 'Height of Parent in inches', 65, min = 30, max = 80, step = 1),
-      submitButton('Submit'),
-      h4('Use this advanced algorithm to predict child height from parent height. The algorithm was created using the Galton data')
+      submitButton('Submit')
       ),
     mainPanel(
       h3('Results of prediction'),
